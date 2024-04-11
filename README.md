@@ -1,6 +1,6 @@
 # Next.js application with Neon Postgres and Auth0 authentication
 
-This is a Next.js application that uses Neon Postgres as the database and Auth0 for user authentication. It allows users to log in, save their favorite quote, and view or delete it later.
+This is a Next.js application that uses `Neon Postgres` as the database, `Drizzle ORM` to interact with it and `Auth0` for user authentication. It allows users to log in, save their favorite quote, and view or delete it later.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ To run this project, you will need:
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/yourusername/guide-neon-next-auth0
+git clone git@github.com:neondatabase/guide-neon-next-auth0.git
 ```
 
 2. Navigate to the project directory and install the dependencies.
@@ -54,6 +54,8 @@ npm run dev
 
 ## Usage
 
-- Click on the "Log in" button to authenticate with Auth0.
-- Once logged in, you can enter your favorite quote in the text field and click "Save Message" to store it in the database.
-- The saved quote will be displayed on the page. You can delete it by clicking the "Delete Quote" button.
+When unauthenticated, you will see a `Log in` button when trying to access the application.  
+
+- Click on the "Log in" button to authenticate with Auth0. Login with an email account or using one of the allowed social auth providers. 
+- Once logged in, you can enter your favorite quote in the text field and click "Save Quote" to store it in the database.
+- The saved quote will be displayed on the page. You can delete it by clicking the "Delete Quote" button. 
